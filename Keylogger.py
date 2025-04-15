@@ -1,3 +1,4 @@
+#This is for educational purposes only
 import pynput
 from pynput.keyboard import Key, Listener # type: ignore
 import logging
