@@ -62,4 +62,38 @@ btn_7.grid(row=4, column=1)
 #Button 8
 btn_8 = tk.Button(root, text="8", command=lambda: add_to_calculation(8), width=5, font=("Arial", 24))
 btn_8.grid(row=4, column=2)
+
+#Button 9
+btn_9 = tk.Button(root, text="9", command=lambda: add_to_calculation(9), width=5, font=("Arial", 24))
+btn_9.grid(row=4, column=3)
+
+#Button 0
+btn_0 = tk.Button(root, text="0", command=lambda: add_to_calculation(0), width=5, font=("Arial", 24))
+btn_0.grid(row=5, column=2)
+
+#Button Plus
+btn_plus = tk.Button(root, text="+", command=lambda: add_to_calculation("+"), width=5, font=("Arial", 24))
+btn_plus.grid(row=2, column=4)
+
+#Button Minus
+btn_minus = tk.Button(root, text="-", command=lambda: add_to_calculation("-"), width=5, font=("Arial", 24))
+btn_minus.grid(row=3, column=4)
+
+#Button Multiplication
+btn_multiplication = tk.Button(root, text="*", command=lambda: add_to_calculation("*"), width=5, font=("Arial", 24))
+btn_multiplication.grid(row=4, column=4)
+
+#Button Division
+btn_division = tk.Button(root, text="/", command=lambda: add_to_calculation("/"), width=5, font=("Arial", 24))
+btn_division.grid(row=5, column=4)
+
+#Button Open Paren
+btn_open = tk.Button(root, text="(", command=lambda: add_to_calculation("("), width=5, font=("Arial", 24))
+btn_open.grid(row=5, column=1)
+
+#Button Closed Paren
+btn_plus = tk.Button(root, text=")", command=lambda: add_to_calculation(")"), width=5, font=("Arial", 24))
+btn_plus.grid(row=5, column=3)
+
+
 root.mainloop()
