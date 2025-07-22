@@ -15,7 +15,7 @@ def evaluate_calculation():
         result = str(eval(calculation))
         calculation = ""
         text_result.delete(1.0, "end")
-        text_result.insert(1.0, calculation)
+        text_result.insert(1.0, result)
     except:
         clear_field()
         text_result.insert(1.0, "Error")
@@ -96,6 +96,11 @@ btn_plus = tk.Button(root, text=")", command=lambda: add_to_calculation(")"), wi
 btn_plus.grid(row=5, column=3)
 
 #Button Equals
-btn_equals = tk.Button(root, text="=", command=lambda: add_to_calculation("="), width=11, font=("Arial", 14))
+btn_equals = tk.Button(root, text="=", command=evaluate_calculation, width=11, font=("Arial", 14))
 btn_equals.grid(row=6, column=1, columnspan=2)
+
+#Button Clear
+btn_clear = tk.Button(root, text="C", command=clear_field, width=11, font=("Arial", 14))
+btn_clear.grid(row=6, column=3, columnspan=2)
+
 root.mainloop()
