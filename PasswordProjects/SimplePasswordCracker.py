@@ -2,7 +2,7 @@ import hashlib
 # Used for Educational Purposes ONLY
 # Followed a tutorial by Brandon Jacobson on Youtube
 # https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Leaked-Databases/Ashley-Madison.txt
-
+# Only used a partial list
 pass_filename = r"C:\Users\Trini\CyAnProjects\PasswordProjects\Ashley-Madison.txt"
 
 password = "booomer"
