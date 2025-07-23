@@ -3,9 +3,9 @@ import hashlib
 # Followed a tutorial by Brandon Jacobson on Youtube
 # https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Leaked-Databases/Ashley-Madison.txt
 
-pass_filename = "Ashley-Madison.txt"
+pass_filename = r"C:\Users\Trini\CyAnProjects\PasswordProjects\Ashley-Madison.txt"
 
-password = "Booomer"
+password = "booomer"
 
 enc_password = password.encode("utf-8")
 password_hash = hashlib.md5(enc_password.strip()).hexdigest()
