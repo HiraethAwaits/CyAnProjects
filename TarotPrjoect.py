@@ -121,9 +121,9 @@ def generate_heart_reading():
     # Shuffle the deck
     random.shuffle(tarot_deck)
     
-    # Draw three cards for the heart reading
+    # Draw six cards for the heart reading
     reading = {}
-    for i in range(3):
+    for i in range(6):
         card = tarot_deck.pop()
         reading[f"Card {i+1}"] = {"card": card, "position": i+1}
     
